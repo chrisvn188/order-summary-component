@@ -26,6 +26,10 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--pale-blue);
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 }
 
 .card-container {
@@ -130,6 +134,9 @@ body {
 }
 
 @media (min-width: 1440px) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+  }
   .card-container {
     width: 26em;
   }
