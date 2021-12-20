@@ -81,6 +81,10 @@ body {
   margin-left: auto;
 }
 
+.card-link:hover {
+  text-decoration: none;
+}
+
 .annual-plan,
 .plan-price {
   display: block;
@@ -111,12 +115,18 @@ body {
   background-color: var(--bright-blue);
   border-radius: 10px;
   box-shadow: 0 10px 20px -8px var(--bright-blue);
+  cursor: pointer;
 }
 
 .cancel-order {
   color: var(--desaturated-blue);
   background-color: transparent;
   margin: 0.4em 0 0.65em;
+}
+
+.cancel-order:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
 }
 
 @media (min-width: 1440px) {
