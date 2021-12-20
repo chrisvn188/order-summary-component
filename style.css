@@ -121,7 +121,7 @@ body {
 .cancel-order {
   color: var(--desaturated-blue);
   background-color: transparent;
-  margin: 0.4em 0 0.65em;
+  margin: 0.4em 0 1em;
 }
 
 .cancel-order:hover {
