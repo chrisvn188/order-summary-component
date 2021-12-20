@@ -4,6 +4,7 @@
   --very-pale-blue: hsl(225, 100%, 98%);
   --desaturated-blue: hsl(224, 23%, 55%);
   --dark-blue: hsl(223, 47%, 23%);
+  --white-color: hsl(0, 100%, 100%);
   box-sizing: border-box;
   font-size: 1em;
 }
@@ -17,17 +18,112 @@
 body {
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 500;
+  line-height: 1.6;
+  height: 100vh;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pale-blue);
 }
 
 .card-container {
-  width: 80vw;
+  width: 21em;
   margin: 0 auto;
+  border-radius: 15px;
+  background-color: var(--white-color);
 }
 
 .card-hero {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-content {
+  width: 86%;
+  margin: 0 auto;
+}
+
+.card-heading {
+  font-weight: 900;
+  color: var(--dark-blue);
+  text-align: center;
+  margin-top: 1.4em;
+  margin-bottom: 0.7em;
+}
+
+.card-para {
+  color: var(--desaturated-blue);
+  text-align: center;
+  padding: 0 0.5em;
+  margin-top: 0;
+}
+
+.plan-price-container {
+  background-color: var(--very-pale-blue);
+  margin: 1.5em auto;
+  padding: 1em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.price-wrapper {
+  margin-left: 1em;
+}
+
+.card-link {
+  display: inline-block;
+  margin-left: auto;
+}
+
+.annual-plan,
+.plan-price {
+  display: block;
+}
+
+.annual-plan {
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+
+.plan-price {
+  color: var(--desaturated-blue);
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+  padding: 1em 0;
+  margin: 0 auto;
+  display: block;
+  border: none;
+}
+
+.proceed-to-payment {
+  color: var(--very-pale-blue);
+  background-color: var(--bright-blue);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px -8px var(--bright-blue);
+}
+
+.cancel-order {
+  color: var(--desaturated-blue);
+  background-color: transparent;
+  margin: 0.4em 0 0.65em;
+}
+
+@media (min-width: 1440px) {
+  .card-container {
+    width: 26em;
+  }
+  .card-content {
+    width: 76%;
+  }
 }
